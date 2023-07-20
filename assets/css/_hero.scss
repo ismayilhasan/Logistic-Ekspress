@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "Teko";
+  src: url("../fonts/Teko/Teko-Regular.ttf") format("truetype");
+}
+#Hero{
+  .hero-slider-item {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/h1_hero.jpg.webp");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .slider-title {
+      font-size: 120px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 14px;
+      text-transform: capitalize;
+      margin-bottom: 40px;
+      line-height: 95px;
+      font-family: "Teko", sans-serif;
+    }
+    .logistic {
+      color: #f15f22;
+    }
+  }
+  .hero-slider-item img {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .search-box {
+    display: flex;
+    input {
+      height: 60px;
+      width: 99%;
+      color: #777777;
+      font-size: 18px;
+      font-weight: 400;
+      padding: 9px 33px 9px 32px;
+      border: none;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    } 
+    
+  
+    .search-input-area{
+        width: 53%;
+      
+    }
+    .button-submit-area{
+        width: 22%;
+        
+    }
+    
+    button{
+        width: 100%;
+        height: 78px;
+        background: #ff5f13;
+        font-size: 20px;
+        line-height: 1;
+        text-align: center;
+        color: #fff;
+        display: block;
+        padding: 15px;
+        border-radius: 0px;
+        text-transform: uppercase;
+        font-family: "Barlow",sans-serif;
+        line-height: 1.2;
+        line-height: 29px;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    
+  }
+}
+
+
+@media (max-width:576px) {
+  #Hero{
+    width: 100%;
+    .hero-slider-item{
+      height: 500px;
+    }
+    .slider-title{
+      font-size: 32px !important;
+    }
+
+    .slider-item{
+
+    }
+
+    .search-box{
+      flex-direction: column;
+    }
+    .search-input-area{
+      width: 100% !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+      input{
+
+      }
+      
+    }
+    .button-submit-area{
+      width: 100% !important;
+      button{
+        border-radius: 0;
+      }
+    }
+  }
+}

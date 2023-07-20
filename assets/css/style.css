@@ -1,0 +1,300 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#HeaderComputer {
+  background-color: #000c20;
+  color: #7b8693;
+  width: 100%;
+  display: block;
+}
+#HeaderComputer .header-top {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #2d2d2d;
+  padding: 0.8rem 12rem 1rem;
+}
+#HeaderComputer .header-top .header-top-info ul {
+  display: flex;
+}
+#HeaderComputer .header-top .header-top-info ul .phone-info {
+  color: #7b8693;
+  display: inline-block;
+  margin-right: 70px;
+  font-size: 14px;
+}
+#HeaderComputer .header-top .header-top-info ul .email-info {
+  color: #7b8693;
+  display: inline-block;
+  font-size: 14px;
+}
+#HeaderComputer .header-top .header-top-icons .header-icons {
+  display: flex;
+}
+#HeaderComputer .header-top .header-top-icons .header-icons li {
+  padding-left: 25px;
+}
+#HeaderComputer .header-top .header-top-icons .header-icons li i {
+  transition: 0.8s;
+  color: #fff;
+}
+#HeaderComputer .header-top .header-top-icons .header-icons li i:hover {
+  color: #ff5f13;
+  transform: rotateY(180deg);
+}
+#HeaderComputer .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#HeaderComputer .navbar .nav-logo {
+  width: 10%;
+}
+#HeaderComputer .navbar .nav-logo img {
+  width: 200px;
+  height: 70px;
+}
+#HeaderComputer .navbar .nav-links {
+  display: flex;
+  justify-content: space-between;
+  transition: 0.5s;
+}
+#HeaderComputer .navbar .nav-links li {
+  font-weight: 400;
+  padding: 39px 19px;
+  display: block;
+  font-size: 16px;
+}
+#HeaderComputer .navbar .nav-links li a {
+  color: #fff;
+  transition: 0.5s;
+}
+#HeaderComputer .navbar .nav-links li a:hover {
+  color: #ff5f13;
+}
+
+#HeaderPhone {
+  background: #000c20;
+  padding: 10px 0;
+  display: none;
+}
+#HeaderPhone .header-phone-all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#HeaderPhone .burger-menu i {
+  color: #fff;
+  font-size: 30px;
+}
+#HeaderPhone .mobile-logo-area {
+  width: 20%;
+}
+#HeaderPhone .mobile-logo-area .mobile-logo {
+  width: 100%;
+}
+
+#Sidebar {
+  z-index: 12;
+  width: 100%;
+  position: absolute;
+  transform: translate(0%, -144%);
+  overflow-y: hidden;
+  transition: 0.5s;
+  display: none;
+}
+#Sidebar .sidebar-nav-links {
+  text-align: center;
+  background: #000c20;
+}
+#Sidebar .sidebar-nav-links li {
+  padding: 10px 0;
+  background: rgba(7, 29, 67, 0.2549019608);
+  border-top: 1px solid #000c20;
+  cursor: pointer;
+}
+#Sidebar .sidebar-nav-links li a {
+  color: #fff;
+}
+#Sidebar .sidebar-nav-links li:hover {
+  background: #68758c;
+}
+
+.sidebar-active {
+  transform: translate(0, 0) !important;
+}
+
+@media (max-width: 576px) {
+  #HeaderComputer {
+    display: none;
+  }
+  #HeaderPhone {
+    display: block;
+  }
+  #Sidebar {
+    display: block;
+  }
+}
+@font-face {
+  font-family: "Teko";
+  src: url("../fonts/Teko/Teko-Regular.ttf") format("truetype");
+}
+#Hero .hero-slider-item {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/h1_hero.jpg.webp");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Hero .hero-slider-item .slider-title {
+  font-size: 120px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 14px;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+  line-height: 95px;
+  font-family: "Teko", sans-serif;
+}
+#Hero .hero-slider-item .logistic {
+  color: #f15f22;
+}
+#Hero .hero-slider-item img {
+  width: 100%;
+  height: 100vh;
+}
+#Hero .search-box {
+  display: flex;
+}
+#Hero .search-box input {
+  height: 60px;
+  width: 99%;
+  color: #777777;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 9px 33px 9px 32px;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+#Hero .search-box .search-input-area {
+  width: 53%;
+}
+#Hero .search-box .button-submit-area {
+  width: 22%;
+}
+#Hero .search-box button {
+  width: 100%;
+  height: 78px;
+  background: #ff5f13;
+  font-size: 20px;
+  line-height: 1;
+  text-align: center;
+  color: #fff;
+  display: block;
+  padding: 15px;
+  border-radius: 0px;
+  text-transform: uppercase;
+  font-family: "Barlow", sans-serif;
+  line-height: 1.2;
+  line-height: 29px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+@media (max-width: 576px) {
+  #Hero {
+    width: 100%;
+  }
+  #Hero .hero-slider-item {
+    height: 500px;
+  }
+  #Hero .slider-title {
+    font-size: 32px !important;
+  }
+  #Hero .search-box {
+    flex-direction: column;
+  }
+  #Hero .search-input-area {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  #Hero .button-submit-area {
+    width: 100% !important;
+  }
+  #Hero .button-submit-area button {
+    border-radius: 0;
+  }
+}
+.container-cs {
+  margin: 0 11rem;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 576px) {
+  .container-cs {
+    margin: 0 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */

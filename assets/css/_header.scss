@@ -1,0 +1,161 @@
+//Header Computer
+#HeaderComputer{
+    background-color: #000c20;
+    color: #7b8693;
+    width: 100%;
+    display: block;
+
+    .header-top{
+        display: flex;
+        justify-content: space-between;  
+        border-bottom: 1px solid #2d2d2d;
+        padding: 0.8rem 12rem 1rem;
+        .header-top-info ul{
+            display: flex;
+            .phone-info{
+                color: #7b8693;
+                display: inline-block;
+                margin-right: 70px;
+                font-size: 14px;
+            }
+            .email-info{
+                color: #7b8693;
+                display: inline-block;
+            
+                font-size: 14px;
+            }
+        }
+
+        .header-top-icons .header-icons{
+            display: flex;
+            li{
+                padding-left: 25px;
+               
+                i{
+                    transition: .8s;
+                    color: #fff;
+                    &:hover{
+                        color: #ff5f13;
+                        transform: rotateY(180deg);
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+        .nav-logo{
+            width: 10%;
+        }
+        .nav-logo img{
+            width: 200px;
+            height: 70px;
+            
+        }
+
+        .nav-links{
+            display: flex;
+            justify-content: space-between;
+            transition: .5s;
+           
+            li{
+               
+                font-weight: 400;
+                padding: 39px 19px;
+                display: block;
+                font-size: 16px;
+            }
+
+            li a{
+                color: #fff;
+                transition: .5s;
+                &:hover{
+                    color: #ff5f13  ;
+                }
+            }
+        }
+    }
+}
+
+
+
+//Header Mobile
+#HeaderPhone{
+    background: #000c20;
+    padding: 10px 0;
+    display: none;
+   .header-phone-all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+    .burger-menu{
+   
+        i{
+            color: #fff;
+            font-size: 30px;
+        }
+    }
+
+    .mobile-logo-area{
+        width: 20%;
+        .mobile-logo{
+            width: 100%;
+        }
+    }
+   
+}
+
+
+// Sidebar
+#Sidebar{
+    z-index: 12;
+    width: 100%;
+    position: absolute;
+    transform:translate(0%, -144%);
+    overflow-y: hidden;
+    transition: .5s;
+    display: none;
+    .sidebar-nav-links{
+        text-align: center;
+        background: #000c20;
+    
+       
+        li{
+            padding: 10px 0;
+            background: #071d4341;
+            border-top: 1px solid #000c20 ;
+            cursor: pointer;
+            a{
+                color: #fff;
+            }
+            &:hover{
+                background: #68758c;
+            }
+        }
+    }
+}
+
+
+.sidebar-active{
+    transform: translate(0,0) !important;
+}
+
+@media (max-width:576px) {
+    #HeaderComputer{
+        display: none;
+    }
+    #HeaderPhone{
+        display: block;
+    }
+    #Sidebar{
+        display: block;
+    }
+    
+}
+
+// Waiting Tablet View Desing

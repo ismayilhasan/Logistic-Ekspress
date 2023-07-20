@@ -1,0 +1,27 @@
+//imports
+@import "_reset.scss";
+@import "_header.scss";
+@import '_hero.scss';
+
+.container-cs {
+    margin: 0 11rem;   
+}
+  
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+a{
+  text-decoration: none;
+}
+
+@media (max-width:576px) {
+  
+  .container-cs{
+    margin: 0 1rem;
+  }
+}
+
